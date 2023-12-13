@@ -11,12 +11,13 @@ public class MovieRecommenderSystemApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext appContext = SpringApplication.run(MovieRecommenderSystemApplication.class, args);
-
+//test
 		RecommenderImplementation recommender = appContext.getBean(RecommenderImplementation.class);
 
 		String[] result = recommender.recommendMovies("Finding Dory");
 
 		System.out.println(Arrays.toString(result));
 	}
+
 
 }
